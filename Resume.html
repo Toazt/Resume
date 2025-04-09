@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Mitchell Meyer - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
       /* Page Setup */
       @page {
@@ -11,7 +12,7 @@
       body {
         margin: 0;
         padding: 0;
-        font-family: 'Arial', sans-serif;
+        font-family: 'Open Sans', sans-serif;
         font-size: 10pt;
         color: #333;
         line-height: 1.4;
@@ -28,13 +29,19 @@
         background: #f2f2f2;
         margin: -0.2in -0.2in 0.15in -0.2in;
         padding: 0.2in;
+        text-align: center;
       }
       .name {
-        font-size: 18pt;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20pt;
         margin: 0;
-        color: #333;
+        color: #222;
+        letter-spacing: 0.5px;
       }
       .contact {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
         font-size: 9pt;
         margin: 0.1in 0 0 0;
         color: #555;
@@ -44,17 +51,22 @@
         color: #555;
         text-decoration: none;
       }
+      .contact-separator {
+        margin: 0 0.3em;
+      }
 
       /* Section Headings */
       h2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
         font-size: 11pt;
         margin-top: 0.6em;
         margin-bottom: 0.2em;
-        letter-spacing: 0.5px;
+        letter-spacing: 0.7px;
         text-transform: uppercase;
         border-bottom: 1px solid #ccc;
         padding-bottom: 2px;
-        color: #666;
+        color: #444;
       }
 
       /* Content Blocks */
@@ -72,7 +84,32 @@
         margin-bottom: 0.3em;
       }
       strong {
+        font-weight: 600;
         color: #222;
+      }
+      
+      /* Experience Section Styling */
+      .company-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 12pt;
+        color: #222;
+        margin-bottom: 0.1in;
+      }
+      .roles-container {
+        margin-left: 0.2in;
+      }
+      .role-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 10.5pt;
+        margin-bottom: 0.05in;
+        margin-top: 0.1in;
+        color: #333;
+      }
+      .role-bullets {
+        margin-left: 0.2in;
+        padding-left: 0;
       }
     </style>
   </head>
@@ -82,15 +119,15 @@
     <div class="header">
       <h1 class="name">Mitchell Meyer</h1>
       <p class="contact">
-        <strong>Phone:</strong> 513-502-5728 | <strong>Email:</strong>
-        <a href="mailto:meyer2mj@mail.uc.edu">meyer2mj@mail.uc.edu</a> |
+        <strong>Phone:</strong> 513-502-5728 <span class="contact-separator">•</span> <strong>Email:</strong>
+        <a href="mailto:meyer2mj@gmail.com">meyer2mj@gmail.com</a> <span class="contact-separator">•</span>
         <strong>Location:</strong> Cincinnati, OH<br />
         <strong>LinkedIn:</strong>
         <a href="https://www.linkedin.com/in/mitchellmeyer"
           >linkedin.com/in/mitchellmeyer</a
         >
-        | <strong>GitHub:</strong>
-        <a href="https://github.com/mitchellmeyer">github.com/mitchellmeyer</a>
+        <span class="contact-separator">•</span> <strong>GitHub:</strong>
+        <a href="https://github.com/Toazt">github.com/Toazt</a>
       </p>
     </div>
 
@@ -100,13 +137,7 @@
       <p>
         Tech Lead with 8+ years of experience building full-stack, event-driven
         systems. Passionate problem solver who leverages AI and clean coding
-        practices to tackle complex challenges. Skilled in Java, Spring Boot,
-        Angular, Python, FastAPI, Azure, Kubernetes, and modern DevOps tooling.
-      </p>
-      <p>
-        Throughout my tenure at 84.51˚, I have mentored numerous junior
-        developers, conducted 100+ interviews, and taught Clean Code
-        practices—fostering a culture of quality and continuous improvement.
+        practices to tackle complex challenges.
       </p>
     </div>
 
@@ -141,78 +172,87 @@
     <div class="section">
       <h2>Experience</h2>
 
-      <p>
-        <strong
-          >Lead Software Engineer / Tech Lead | 84.51˚ (Feb 2023 – Mar
-          2025)</strong
-        >
+      <p class="company-name">
+        84.51˚ (May 2017 – Mar 2025)
       </p>
-      <ul>
-        <li>
-          Led an 8-person team delivering a science orchestration platform to
-          run sciences in kubernetes delivering millions of dollars in revenue
-          each week with zero missed SLAs.
-        </li>
-        <li>
-          Architected horizontally scalable microservices (FastAPI, Azure
-          Service Bus) for thousands of concurrent jobs.
-        </li>
-      </ul>
 
-      <p>
-        <strong
-          >Senior Software Engineer / Tech Lead | 84.51˚ (Jun 2019 – Feb
-          2023)</strong
-        >
-      </p>
-      <ul>
-        <li>
-          Co-built a multimillion-dollar ad platform, expanding from 1 to 10+
-          teams.
-        </li>
-        <li>
-          Developed using full stack consisting of Spring Boot backends and
-          Angular/NgRx frontends
-        </li>
-        <li>
-          Promoted early to Tech Lead for strong architectural insight and
-          passion for best practices.
-        </li>
-      </ul>
+      <div class="roles-container">
+        <p class="role-title">
+          Science Orchestration - Tech Lead
+        </p>
+        <ul class="role-bullets">
+          <li>
+            Led an 8-person team delivering a science orchestration platform to
+            run sciences in kubernetes delivering millions of dollars in revenue
+            each week with zero missed SLAs.
+          </li>
+          <li>
+            Architected horizontally scalable microservices (FastAPI, Azure
+            Service Bus) for thousands of concurrent jobs.
+          </li>
+        </ul>
 
-      <p>
-        <strong>Junior Software Engineer | 84.51˚ (May 2017 – Jan 2019)</strong>
-      </p>
-      <ul>
-        <li>
-          Created Spark/Scala ETL pipelines; automated data tasks with
-          SQL/Oracle and Automic.
-        </li>
-        <li>
-          Developed foundational skills in testing, clean code, and
-          microservices.
-        </li>
-      </ul>
+        <p class="role-title">
+          Ad Platform - Tech Lead
+        </p>
+        <ul class="role-bullets">
+          <li>
+            Co-built a multimillion-dollar ad platform, expanding from 1 to 10+
+            teams.
+          </li>
+          <li>
+            Developed using full stack consisting of Spring Boot backends and
+            Angular/NgRx frontends
+          </li>
+          <li>
+            Promoted early to Tech Lead for strong architectural insight and
+            passion for best practices.
+          </li>
+        </ul>
+
+        <p class="role-title">
+          Digital Marketing Platform
+        </p>
+        <ul class="role-bullets">
+          <li>
+            Created Spark/Scala ETL pipelines; automated data tasks with
+            SQL/Oracle and Automic.
+          </li>
+          <li>
+            Developed foundational skills in testing, clean code, and
+            microservices.
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- PROJECT -->
     <div class="section">
-      <h2>Project</h2>
-      <p><strong>justopenednearme.com</strong></p>
-      <ul>
-        <li>
-          Developed an Nx monorepo (Angular + NestJS) deployed via
-          Helm/Terraform to a self managed Kubernetes cluster in DigitalOcean.
-        </li>
-        <li>
-          Surpassed Google's 60-result limit with a custom hexagonal search
-          algorithm; used Postgres/Redis to detect new openings.
-        </li>
-        <li>
-          Compared historical data to detect new additions or removals,
-          accurately identifying "new" openings in each area.
-        </li>
-      </ul>
+      <h2>Entrepreneurial Ventures</h2>
+      <p>
+        <a href="https://justopenednearme.com" target="_blank" style="font-size: 11pt; font-weight: 500; color: #1a73e8; text-decoration: none;">
+          justopenednearme.com
+        </a>
+      </p>
+      <div style="margin-left: 0.2in;">
+        <p style="margin-top: 0.05in; margin-bottom: 0.1in; font-style: italic; font-size: 9pt;">
+          Technologies: Angular, NestJS, Kubernetes, Helm, Terraform, Github Actions, PostgreSQL, Redis, DigitalOcean
+        </p>
+        <ul>
+          <li>
+            Created this site as a solution to a real problem: as the organizer of Wednesday team lunches, 
+            I struggled to find newly opened restaurants to keep outings fresh and exciting.
+          </li>
+          <li>
+            Solved limitations of Google Maps (which only shows 60 results) by developing a custom search algorithm 
+            that identifies truly new restaurants in any given area.
+          </li>
+          <li>
+            Built a system that automatically detects new restaurant openings by comparing historical data, 
+            making it easy for anyone to discover the latest dining options in their neighborhood.
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- EDUCATION -->
