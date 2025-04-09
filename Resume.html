@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mitchell Meyer - Resume</title>
+    <style>
+      /* Page Setup */
+      @page {
+        margin: 0.4in; /* Slightly narrower margins for single-page fit */
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        font-size: 10pt;
+        color: #333;
+        line-height: 1.4;
+      }
+
+      /* Content Container */
+      .container {
+        padding: 0.2in;
+        max-width: 100%;
+      }
+
+      /* Header Section */
+      .header {
+        background: #f2f2f2;
+        margin: -0.2in -0.2in 0.15in -0.2in;
+        padding: 0.2in;
+      }
+      .name {
+        font-size: 18pt;
+        margin: 0;
+        color: #333;
+      }
+      .contact {
+        font-size: 9pt;
+        margin: 0.1in 0 0 0;
+        color: #555;
+        line-height: 1.3;
+      }
+      .contact a {
+        color: #555;
+        text-decoration: none;
+      }
+
+      /* Section Headings */
+      h2 {
+        font-size: 11pt;
+        margin-top: 0.6em;
+        margin-bottom: 0.2em;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 2px;
+        color: #666;
+      }
+
+      /* Content Blocks */
+      .section {
+        margin-bottom: 0.6em;
+      }
+      .section p {
+        margin: 0.3em 0;
+      }
+      ul {
+        margin: 0 0 0 1em;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 0.3em;
+      }
+      strong {
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <!-- HEADER -->
+    <div class="header">
+      <h1 class="name">Mitchell Meyer</h1>
+      <p class="contact">
+        <strong>Phone:</strong> 513-502-5728 | <strong>Email:</strong>
+        <a href="mailto:meyer2mj@mail.uc.edu">meyer2mj@mail.uc.edu</a> |
+        <strong>Location:</strong> Cincinnati, OH<br />
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/mitchellmeyer"
+          >linkedin.com/in/mitchellmeyer</a
+        >
+        | <strong>GitHub:</strong>
+        <a href="https://github.com/mitchellmeyer">github.com/mitchellmeyer</a>
+      </p>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section">
+      <h2>Summary</h2>
+      <p>
+        Tech Lead with 8+ years of experience building full-stack, event-driven
+        systems. Passionate problem solver who leverages AI and clean coding
+        practices to tackle complex challenges. Skilled in Java, Spring Boot,
+        Angular, Python, FastAPI, Azure, Kubernetes, and modern DevOps tooling.
+      </p>
+      <p>
+        Throughout my tenure at 84.51˚, I have mentored numerous junior
+        developers, conducted 100+ interviews, and taught Clean Code
+        practices—fostering a culture of quality and continuous improvement.
+      </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <h2>Core Skills</h2>
+      <ul>
+        <li>
+          <strong>Languages/Frameworks:</strong> Java, Python, TypeScript,
+          Spring Boot, Angular
+        </li>
+        <li>
+          <strong>Cloud/DevOps:</strong> Azure, Kubernetes, Terraform, Helm,
+          Docker
+        </li>
+        <li>
+          <strong>Data & Messaging:</strong> PostgreSQL, MongoDB, Redis, Azure
+          Service Bus
+        </li>
+        <li>
+          <strong>Architecture:</strong> Microservices, Event-Driven, CI/CD,
+          Clean Code
+        </li>
+        <li>
+          <strong>Leadership:</strong> Mentoring, Interviews, Cross-Functional
+          Collaboration
+        </li>
+      </ul>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <h2>Experience</h2>
+
+      <p>
+        <strong
+          >Lead Software Engineer / Tech Lead | 84.51˚ (Feb 2023 – Mar
+          2025)</strong
+        >
+      </p>
+      <ul>
+        <li>
+          Led an 8-person team delivering a science orchestration platform to
+          run sciences in kubernetes delivering millions of dollars in revenue
+          each week with zero missed SLAs.
+        </li>
+        <li>
+          Architected horizontally scalable microservices (FastAPI, Azure
+          Service Bus) for thousands of concurrent jobs.
+        </li>
+      </ul>
+
+      <p>
+        <strong
+          >Senior Software Engineer / Tech Lead | 84.51˚ (Jun 2019 – Feb
+          2023)</strong
+        >
+      </p>
+      <ul>
+        <li>
+          Co-built a multimillion-dollar ad platform, expanding from 1 to 10+
+          teams.
+        </li>
+        <li>
+          Developed using full stack consisting of Spring Boot backends and
+          Angular/NgRx frontends
+        </li>
+        <li>
+          Promoted early to Tech Lead for strong architectural insight and
+          passion for best practices.
+        </li>
+      </ul>
+
+      <p>
+        <strong>Junior Software Engineer | 84.51˚ (May 2017 – Jan 2019)</strong>
+      </p>
+      <ul>
+        <li>
+          Created Spark/Scala ETL pipelines; automated data tasks with
+          SQL/Oracle and Automic.
+        </li>
+        <li>
+          Developed foundational skills in testing, clean code, and
+          microservices.
+        </li>
+      </ul>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="section">
+      <h2>Project</h2>
+      <p><strong>justopenednearme.com</strong></p>
+      <ul>
+        <li>
+          Developed an Nx monorepo (Angular + NestJS) deployed via
+          Helm/Terraform to a self managed Kubernetes cluster in DigitalOcean.
+        </li>
+        <li>
+          Surpassed Google's 60-result limit with a custom hexagonal search
+          algorithm; used Postgres/Redis to detect new openings.
+        </li>
+        <li>
+          Compared historical data to detect new additions or removals,
+          accurately identifying "new" openings in each area.
+        </li>
+      </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <h2>Education</h2>
+      <p>
+        <strong>B.S. in Information Technology (2017)</strong>, University of
+        Cincinnati<br />
+        Minor in Information Systems • Mobile App Development Certificate • GPA
+        3.6
+      </p>
+    </div>
+    </div>
+  </body>
+</html>
